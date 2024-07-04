@@ -42,4 +42,8 @@ describe('Central de Atendimento ao Cliente TAT', function() {
             cy.get('#product').should('have.value', 'youtube')
 
         })
+
+        it("marca o tipo de atendimento Feedback", function () {
+            cy.get('input[type="radio"][value="feedback"]').check()
+        })
   })
